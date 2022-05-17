@@ -44,8 +44,28 @@
 //     document.write("<br>")
 // }
 
-var fruits = ["apple","mango","banana"];
-fruits.forEach(function(value){
-    document.write(value + "<br>")
-});
+// var fruits = ["apple","mango","banana"];
+// fruits.forEach(function(value){
+//     document.write(value + "<br>")
+// });
+// var data = {
+//     firstname: "mujtaba",
+//     roll: "4160",
+//     age: "20"
+// }
+// for(var key in data){
+//     document.write(key + " : " + data[key] + "<br>");
+// }
+let age = prompt("enter your age");
+
+switch(true){
+    case (age>=18):
+        document.write("your are eligible");
+        break;
+    case (age<18):
+        document.write("your are not eligible");
+        break;
+}
+
+
 // document.write(fruits[1]);
