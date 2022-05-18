@@ -20,22 +20,26 @@
 //         console.log("you are eligible");
 //     }
 // }
-// let x = prompt("Enter your Table Number");
+let x = prompt("Enter your Table Number");
 // document.write("Table of " + x + " is given"+"<br>");
 // for(let a=1; 11>a; a++){
 //     // console.log(a*x);
 //     document.write(x + "*" + a + "=" + a*x + "<br>");
 // }
-// for(let a=1; 11>a; a++){
-//     var tr = document.createElement('tr');
-//     var td1 = tr.appendChild(document.createElement('td'));
-//     var td2 = tr.appendChild(document.createElement('td'));
-//     var td3 = tr.appendChild(document.createElement('td'));
-//     td1.innerHTML = x;
-//     td2.innerHTML = a;
-//     td3.innerHTML = a*x;
-//     document.getElementById("tb").appendChild(tr);
-// }
+for(let a=1; 11>a; a++){
+    var tr = document.createElement('tr');
+    var td1 = tr.appendChild(document.createElement('td'));
+    var tdmul = tr.appendChild(document.createElement('td'));
+    var td2 = tr.appendChild(document.createElement('td'));
+    var tdeq = tr.appendChild(document.createElement('td'));
+    var td3 = tr.appendChild(document.createElement('td'));
+    td1.innerHTML = x;
+    tdmul.innerHTML = "x"
+    td2.innerHTML = a;
+    tdeq.innerHTML = "="
+    td3.innerHTML = a*x;
+    document.getElementById("tb").appendChild(tr);
+}
 
 // for(let i = 1; i<=x; i++){
 //     for(let j = 1; j<=i; j++){
@@ -45,9 +49,10 @@
 // }
 
 // var fruits = ["apple","mango","banana"];
-// fruits.forEach(function(value){
-//     document.write(value + "<br>")
+// fruits.forEach(function(value, index){
+//     document.write(index+ ": "+ value + "<br>")
 // });
+// document.write(fruits[1]);
 // var data = {
 //     firstname: "mujtaba",
 //     roll: "4160",
@@ -56,16 +61,13 @@
 // for(var key in data){
 //     document.write(key + " : " + data[key] + "<br>");
 // }
-let age = prompt("enter your age");
+// let age = prompt("enter your age");
 
-switch(true){
-    case (age>=18):
-        document.write("your are eligible");
-        break;
-    case (age<18):
-        document.write("your are not eligible");
-        break;
-}
-
-
-// document.write(fruits[1]);
+// switch(true){
+//     case (age>=18):
+//         document.write("your are eligible");
+//         break;
+//     case (age<18):
+//         document.write("your are not eligible");
+//         break;
+// }
